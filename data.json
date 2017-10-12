@@ -1,0 +1,49 @@
+{
+  "deals": [
+    {
+      "id": 1,
+      "company": "Hallensteins",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif"
+    },
+    {
+      "id": 2,
+      "company": "Pagani",
+      "image": "https://www.tvnz.co.nz/content/dam/images/news/2015/07/08/pagan.jpg"
+    },
+    {
+      "id": 3,
+      "company": "Barkers",
+      "image": "https://i.ytimg.com/vi/j4KVPhFGzCs/maxresdefault.jpg"
+    },
+    {
+      "id": 4,
+      "company": "Kimberleys",
+      "image": "http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg"
+    },
+    {
+      "id": 5,
+      "company": "Good as Gold",
+      "image": "http://www.gagmagazine.com/wp-content/uploads/2014/06/cropped-GAGmagazine_Logo_Final_SocialMedia_WhiteOnBlack.jpg"
+    },
+    {
+      "id": 6,
+      "company": "Witchery",
+      "image": "https://i.ytimg.com/vi/x0-v0ysYvPA/maxresdefault.jpg"
+    },
+    {
+      "id": 7,
+      "company": "Tarocash",
+      "image": "http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg"
+    },
+    {
+      "id": 8,
+      "company": "Glassons",
+      "image": "https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png"
+    },
+    {
+      "id": 9,
+      "company": "I Love Ugly",
+      "image": "https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg"
+    }
+  ]
+}

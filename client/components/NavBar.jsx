@@ -6,7 +6,6 @@ const NavBar = (props) => {
       <div className="navbar-brand">
         {/* <img src="https://ih0.redbubble.net/image.236399780.9730/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u3.jpg" alt="The Murricane Himself" width="150" height="5"/> */}
 
-
         <button className="button navbar-burger">
           <span></span>
           <span></span>
@@ -14,9 +13,14 @@ const NavBar = (props) => {
         </button>
       </div>
 
-      <a class="navbar-item">
+      <a className="navbar-item">
         <span></span>
         Home
+      </a>
+
+      <a className="navbar-item">
+        <span></span>
+        Profile
       </a>
 
       <div id="navMenuTransparentExample" className="navbar-menu">
@@ -34,9 +38,6 @@ const NavBar = (props) => {
               </a>
               <a className="navbar-item">
                   Children
-              </a>
-              <a className="navbar-item">
-                  Need a buyer A.S.A.P!
               </a>
               <a className="navbar-item">
                   *New*

@@ -2,10 +2,21 @@ import React from 'react'
 
 const Header = (props) => {
   return (
-    <div className="level section">
-      <h4 className="level-item subtitle">Your Profile</h4>
-      <h1 className="level-item title is-1 has-text-centered">L!NE !T UP</h1>
-      <h4 className="level-item subtitle" >Shopping cart</h4>
+    <div className="columns has-text-centered section">
+      <div className="field has-addons column" >
+        <div className="control">
+          <input className="input" type="text"/>
+        </div>
+        <div className="control">
+          <a className="button is-info">
+              Search
+          </a>
+        </div>
+      </div>
+      <div className="column is-6">
+        <h1 className="title is-1 has-text-centered">L!NE !T UP</h1>
+      </div>
+      <h4 className="column subtitle">Shopping cart <br/> <img src="https://openclipart.org/image/2400px/svg_to_png/60139/cart.png" width="50" height="50" /></h4>
     </div>
   )
 }
