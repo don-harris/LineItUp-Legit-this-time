@@ -18,15 +18,31 @@ const NavBar = (props) => {
         Home
       </a>
 
-      <a className="navbar-item">
-        <span></span>
-        Profile
-      </a>
+   
+      <div className="navbar-item has-dropdown is-hoverable">
+        <a className="navbar-link  is-active">
+          Profile
+        </a>
+        <div className="navbar-dropdown is-boxed">
+          <a className="navbar-item ">
+            Login
+          </a>
+          <a className="navbar-item">
+            Register
+          </a>
+          <a className="navbar-item">
+            Profile page
+          </a>
+          <a className="navbar-item">
+            Sign out
+          </a>
+        </div>
+      </div>
 
       <div id="navMenuTransparentExample" className="navbar-menu">
         <div className="navbar-start">
           <div className="navbar-item has-dropdown is-hoverable">
-            <a className="navbar-link  is-active" href="/documentation/overview/start/">
+            <a className="navbar-link  is-active">
                 Deals
             </a>
             <div className="navbar-dropdown is-boxed">
@@ -43,6 +59,7 @@ const NavBar = (props) => {
                   *New*
               </a>
             </div>
+
           </div>
         </div>
       </div>

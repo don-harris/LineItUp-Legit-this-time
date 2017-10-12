@@ -1,12 +1,9 @@
-/* .container {
-  display: inline-flex;
-  text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
-
 .company {
   /* margin: 30px; */
   width: 30vw; 
   
+}
+
+.button {
+  margin: 20px;
 }
