@@ -8,7 +8,7 @@ const Container = (props) => {
     <div className="section has-text-centered columns is-multiline">
       {testData.deals.map((data) => {
         return (
-          <Company company={data.company} key={data.id} image={data.image} />
+          <Company company={data.company} key={data.id} image={data.image} deal={data.deal} />
         )
       }
       )}

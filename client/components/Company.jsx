@@ -4,7 +4,28 @@ import testData from '../../data.json'
 
 import Deal from './DealComponents/Deal'
 
-class Company extends React.Component(this.props) {
+class Company extends React.Component {
+  constructor (props) {
+    super(props)
+    this.state = {
+      deal: []
+    }
+    this.fetchDeal = this.fetchDeal.bind(this)
+  }
+  componentWillMount () {
+    this.fetchDeal()
+  }
+
+  fetchPlayers () {
+    return getPla ()
+      .then(players => {
+        this.setState({ players: players })
+      })
+      .catch(err => {
+        this.setState({ errorMessage: err.message })
+      })
+  }
+
   render () {
     return (
       <div className="column is-4 is-desktop-only company">
@@ -13,12 +34,19 @@ class Company extends React.Component(this.props) {
           <button className="button"><Link to='/Deal'>Line It Up!</Link></button>
         </div>
         <hr />
-        <Route path='/Deal' render={(props) => (
-          <Deal deal={this.props.deal}/>
-        )} />
+        <Route path='/Deal' component={Deal}/>
+        <Deal />
       </div>
     )
   }
 }
+
+// render = {(props) => (
+// deal = {
+//   this.deals.find((deal) =>
+//     deal.id === Number(props.match.params.id))
+// }
+// )} />
+//       </div >
 
 export default Company

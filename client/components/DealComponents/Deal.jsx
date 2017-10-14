@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 const Deal = (props) => {
   return (
     <div>
-      <h2>{props.deal}</h2>
+      <h2>You have made it to the next stage...</h2>
     </div>
   )
 }

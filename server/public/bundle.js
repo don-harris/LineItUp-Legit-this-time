@@ -11627,6 +11627,13 @@ var App = function (_React$Component) {
 
   _createClass(App, [{
     key: 'render',
+
+    // constructor (props) {
+    //   super(props)
+    //   this.state = {
+
+    //   }
+    // }
     value: function render() {
       return _react2.default.createElement(
         _reactRouterDom.BrowserRouter,
@@ -11698,17 +11705,37 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Company = function (_React$Component) {
   _inherits(Company, _React$Component);
 
-  function Company() {
+  function Company(props) {
     _classCallCheck(this, Company);
 
-    return _possibleConstructorReturn(this, (Company.__proto__ || Object.getPrototypeOf(Company)).apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, (Company.__proto__ || Object.getPrototypeOf(Company)).call(this, props));
+
+    _this.state = {
+      deal: []
+    };
+    _this.fetchDeal = _this.fetchDeal.bind(_this);
+    return _this;
   }
 
   _createClass(Company, [{
-    key: 'render',
-    value: function render() {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      this.fetchDeal();
+    }
+  }, {
+    key: 'fetchPlayers',
+    value: function fetchPlayers() {
       var _this2 = this;
 
+      return getPla().then(function (players) {
+        _this2.setState({ players: players });
+      }).catch(function (err) {
+        _this2.setState({ errorMessage: err.message });
+      });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
       return _react2.default.createElement(
         'div',
         { className: 'column is-4 is-desktop-only company' },
@@ -11727,15 +11754,22 @@ var Company = function (_React$Component) {
           )
         ),
         _react2.default.createElement('hr', null),
-        _react2.default.createElement(_reactRouterDom.Route, { path: '/Deal', render: function render(props) {
-            return _react2.default.createElement(_Deal2.default, { deal: _this2.props.deal });
-          } })
+        _react2.default.createElement(_reactRouterDom.Route, { path: '/Deal', component: _Deal2.default }),
+        _react2.default.createElement(_Deal2.default, null)
       );
     }
   }]);
 
   return Company;
-}(_react2.default.Component(undefined.props));
+}(_react2.default.Component);
+
+// render = {(props) => (
+// deal = {
+//   this.deals.find((deal) =>
+//     deal.id === Number(props.match.params.id))
+// }
+// )} />
+//       </div >
 
 exports.default = Company;
 
@@ -11769,7 +11803,7 @@ var Container = function Container(props) {
     'div',
     { className: 'section has-text-centered columns is-multiline' },
     _data2.default.deals.map(function (data) {
-      return _react2.default.createElement(_Company2.default, { company: data.company, key: data.id, image: data.image });
+      return _react2.default.createElement(_Company2.default, { company: data.company, key: data.id, image: data.image, deal: data.deal });
     })
   );
 };
@@ -11802,7 +11836,7 @@ var Deal = function Deal(props) {
     _react2.default.createElement(
       'h2',
       null,
-      props.deal
+      'You have made it to the next stage...'
     )
   );
 };
