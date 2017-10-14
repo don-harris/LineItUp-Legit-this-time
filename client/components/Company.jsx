@@ -1,16 +1,24 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import testData from '../../data.json'
 
-const Company = (props) => {
-  return (
-    <div className="column is-4 is-desktop-only company">
-      <div className="image">
-        <img src={props.image}/>
-        <button className="button">Line It Up!</button>
+import Deal from './DealComponents/Deal'
+
+class Company extends React.Component(this.props) {
+  render () {
+    return (
+      <div className="column is-4 is-desktop-only company">
+        <div className="image">
+          <img src={this.props.image}/>
+          <button className="button"><Link to='/Deal'>Line It Up!</Link></button>
+        </div>
+        <hr />
+        <Route path='/Deal' render={(props) => (
+          <Deal deal={this.props.deal}/>
+        )} />
       </div>
-      {/* <h3 className="subtitle is-2">{props.company}</h3> */}
-      <hr />
-    </div>
-  )
+    )
+  }
 }
 
 export default Company

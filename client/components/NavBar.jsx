@@ -18,7 +18,6 @@ const NavBar = (props) => {
         Home
       </a>
 
-   
       <div className="navbar-item has-dropdown is-hoverable">
         <a className="navbar-link  is-active">
           Profile
@@ -46,7 +45,7 @@ const NavBar = (props) => {
                 Deals
             </a>
             <div className="navbar-dropdown is-boxed">
-              <a className="navbar-item ">
+              <a className="navbar-item has-dropdown is-hoverable">
                   Mens
               </a>
               <a className="navbar-item">
