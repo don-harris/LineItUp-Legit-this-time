@@ -1,10 +1,12 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import testData from '../../../data.json'
 
 const Deal = (props) => {
+  const id = Number(props.match.params.id)
+  const deal = testData.deals.find((deal) => deal.id === id)
   return (
     <div>
-      <h2>You have made it to the next stage...</h2>
+      <h2>{deal.Deal}</h2>
     </div>
   )
 }

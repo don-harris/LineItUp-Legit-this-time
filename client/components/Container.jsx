@@ -6,9 +6,9 @@ import testData from '../../data.json'
 const Container = (props) => {
   return (
     <div className="section has-text-centered columns is-multiline">
-      {testData.deals.map((data) => {
+      {testData.deals.map((deal) => {
         return (
-          <Company company={data.company} key={data.id} image={data.image} deal={data.deal} />
+          <Company deal={deal} key={deal.id} />
         )
       }
       )}

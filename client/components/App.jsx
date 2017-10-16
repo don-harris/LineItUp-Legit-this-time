@@ -5,6 +5,7 @@ import Header from './Header'
 import Footer from './Footer'
 import Container from './Container'
 import NavBar from './NavBar'
+import Deal from './DealComponents/Deal'
 
 class App extends React.Component {
   // constructor (props) {
@@ -20,7 +21,8 @@ class App extends React.Component {
           <Header/>
           <NavBar />
           <hr/>
-          <Container />
+          <Route exact path='/' component={Container} />
+          <Route exact path='/deal/:id' component={Deal} />
           <hr />
           <Footer />
         </div>
