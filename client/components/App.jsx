@@ -19,7 +19,7 @@ class App extends React.Component {
       <Router>
         <div className="container">
           <Header/>
-          <NavBar />
+          <Route path='/' component={NavBar} />
           <hr/>
           <Route exact path='/' component={Container} />
           <Route exact path='/deal/:id' component={Deal} />

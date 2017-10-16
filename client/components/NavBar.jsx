@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const NavBar = (props) => {
   return (
@@ -12,11 +13,11 @@ const NavBar = (props) => {
           <span></span>
         </button>
       </div>
-
-      <a className="navbar-item">
-        <span></span>
-        Home
-      </a>
+      <div className="navbar-item"> 
+        <Link to='/'>
+         Home
+        </Link>
+      </div>
 
       <div className="navbar-item has-dropdown is-hoverable">
         <a className="navbar-link  is-active">
