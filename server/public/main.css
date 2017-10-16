@@ -7,3 +7,7 @@
 .button {
   margin: 20px;
 }
+
+.subtitle {
+  display: inline;
+}

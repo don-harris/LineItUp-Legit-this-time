@@ -28,9 +28,10 @@ class Company extends React.Component {
         <div className="image">
           <img src={this.props.deal.image}/>
           <br/>
-          <h2>{this.props.deal.Deal}</h2>
-          <button className="button"><Link to={`/deal/${this.props.deal.id}`}>Line It Up!</Link></button>
-
+          <div className="subtitle is-3 is-cyan">
+            <h2>{this.props.deal.Deal}</h2>
+          </div>
+          <button className="button"><Link to={`/deal/${this.props.deal.id}`}>Line It Up!</Link></button>{this.props.deal.Buyers}
         </div>
         <hr />
       </div>
