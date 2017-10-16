@@ -13,7 +13,7 @@ const NavBar = (props) => {
           <span></span>
         </button>
       </div>
-      <div className="navbar-item"> 
+      <div className="navbar-item">
         <Link to='/'>
          Home
         </Link>
@@ -24,15 +24,21 @@ const NavBar = (props) => {
           Profile
         </a>
         <div className="navbar-dropdown is-boxed">
-          <a className="navbar-item ">
+          <div className="navbar-item ">
+            <Link to='/login'>
             Login
-          </a>
-          <a className="navbar-item">
+            </Link>
+          </div>
+          <div className="navbar-item ">
+            <Link to='/register'>
             Register
-          </a>
-          <a className="navbar-item">
+            </Link>
+          </div>
+          <div className="navbar-item ">
+            <Link to='/profile'>
             Profile page
-          </a>
+            </Link>
+          </div>
           <a className="navbar-item">
             Sign out
           </a>

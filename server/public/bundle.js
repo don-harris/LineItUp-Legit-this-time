@@ -11651,6 +11651,18 @@ var _Deal = __webpack_require__(65);
 
 var _Deal2 = _interopRequireDefault(_Deal);
 
+var _ProfileLogin = __webpack_require__(239);
+
+var _ProfileLogin2 = _interopRequireDefault(_ProfileLogin);
+
+var _ProfilePage = __webpack_require__(240);
+
+var _ProfilePage2 = _interopRequireDefault(_ProfilePage);
+
+var _ProfileRegister = __webpack_require__(241);
+
+var _ProfileRegister2 = _interopRequireDefault(_ProfileRegister);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11689,6 +11701,9 @@ var App = function (_React$Component) {
           _react2.default.createElement('hr', null),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Container2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/deal/:id', component: _Deal2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/login', component: _ProfileLogin2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/profile', component: _ProfilePage2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/register', component: _ProfileRegister2.default }),
           _react2.default.createElement('hr', null),
           _react2.default.createElement(_Footer2.default, null)
         )
@@ -12032,19 +12047,31 @@ var NavBar = function NavBar(props) {
         'div',
         { className: 'navbar-dropdown is-boxed' },
         _react2.default.createElement(
-          'a',
+          'div',
           { className: 'navbar-item ' },
-          'Login'
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/login' },
+            'Login'
+          )
         ),
         _react2.default.createElement(
-          'a',
-          { className: 'navbar-item' },
-          'Register'
+          'div',
+          { className: 'navbar-item ' },
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/register' },
+            'Register'
+          )
         ),
         _react2.default.createElement(
-          'a',
-          { className: 'navbar-item' },
-          'Profile page'
+          'div',
+          { className: 'navbar-item ' },
+          _react2.default.createElement(
+            _reactRouterDom.Link,
+            { to: '/profile' },
+            'Profile page'
+          )
         ),
         _react2.default.createElement(
           'a',
@@ -27126,6 +27153,111 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 239 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _data = __webpack_require__(39);
+
+var _data2 = _interopRequireDefault(_data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProfileLogin = function ProfileLogin(props) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Profile login, congratulations'
+    )
+  );
+};
+
+exports.default = ProfileLogin;
+
+/***/ }),
+/* 240 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _data = __webpack_require__(39);
+
+var _data2 = _interopRequireDefault(_data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProfilePage = function ProfilePage(props) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Profile Page, congratulations'
+    )
+  );
+};
+
+exports.default = ProfilePage;
+
+/***/ }),
+/* 241 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _data = __webpack_require__(39);
+
+var _data2 = _interopRequireDefault(_data);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var ProfileRegister = function ProfileRegister(props) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Profile Register, congratulations'
+    )
+  );
+};
+
+exports.default = ProfileRegister;
 
 /***/ })
 /******/ ]);

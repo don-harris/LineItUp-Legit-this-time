@@ -6,6 +6,9 @@ import Footer from './Footer'
 import Container from './Container'
 import NavBar from './NavBar'
 import Deal from './DealComponents/Deal'
+import ProfileLogin from './profileComponents/ProfileLogin'
+import ProfilePage from './profileComponents/ProfilePage'
+import ProfileRegister from './profileComponents/ProfileRegister'
 
 class App extends React.Component {
   // constructor (props) {
@@ -23,6 +26,9 @@ class App extends React.Component {
           <hr/>
           <Route exact path='/' component={Container} />
           <Route exact path='/deal/:id' component={Deal} />
+          <Route exact path='/login' component={ProfileLogin}/>
+          <Route exact path='/profile' component={ProfilePage} />
+          <Route exact path='/register' component={ProfileRegister} />
           <hr />
           <Footer />
         </div>
