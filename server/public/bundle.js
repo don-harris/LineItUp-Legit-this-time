@@ -3096,7 +3096,7 @@ module.exports = reactProdInvariant;
 /* 24 */
 /***/ (function(module, exports) {
 
-module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"Only 1 buyer needed!"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed "},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!"},{"id":5,"company":"Good as Gold","image":"http://www.gagmagazine.com/wp-content/uploads/2014/06/cropped-GAGmagazine_Logo_Final_SocialMedia_WhiteOnBlack.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!"}]}
+module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!","gender":"male"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"female"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed ","gender":"male"},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":5,"company":"Good as Gold","image":"http://www.gagmagazine.com/wp-content/uploads/2014/06/cropped-GAGmagazine_Logo_Final_SocialMedia_WhiteOnBlack.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!","gender":"male"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!","gender":"male"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!","gender":"male"}]}
 
 /***/ }),
 /* 25 */
@@ -12152,9 +12152,50 @@ var ProfileLogin = function ProfileLogin(props) {
     'div',
     null,
     _react2.default.createElement(
-      'h2',
-      null,
-      'Profile login, congratulations'
+      'div',
+      { className: 'field' },
+      _react2.default.createElement(
+        'p',
+        { className: 'control has-icons-left has-icons-right' },
+        _react2.default.createElement('input', { className: 'input', type: 'email', placeholder: 'Email' }),
+        _react2.default.createElement(
+          'span',
+          { className: 'icon is-small is-left' },
+          _react2.default.createElement('i', { className: 'fa fa-envelope' })
+        ),
+        _react2.default.createElement(
+          'span',
+          { className: 'icon is-small is-right' },
+          _react2.default.createElement('i', { className: 'fa fa-check' })
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'field' },
+      _react2.default.createElement(
+        'p',
+        { className: 'control has-icons-left' },
+        _react2.default.createElement('input', { className: 'input', type: 'password', placeholder: 'Password' }),
+        _react2.default.createElement(
+          'span',
+          { className: 'icon is-small is-left' },
+          _react2.default.createElement('i', { className: 'fa fa-lock' })
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'field' },
+      _react2.default.createElement(
+        'p',
+        { className: 'control' },
+        _react2.default.createElement(
+          'button',
+          { className: 'button is-success' },
+          'Login'
+        )
+      )
     )
   );
 };
@@ -12362,26 +12403,6 @@ var ProfileRegister = function ProfileRegister(props) {
             { href: '#' },
             'terms and conditions'
           )
-        )
-      )
-    ),
-    _react2.default.createElement(
-      'div',
-      { className: 'field' },
-      _react2.default.createElement(
-        'div',
-        { className: 'control' },
-        _react2.default.createElement(
-          'label',
-          { className: 'radio' },
-          _react2.default.createElement('input', { type: 'radio', name: 'question' }),
-          'Yes'
-        ),
-        _react2.default.createElement(
-          'label',
-          { className: 'radio' },
-          _react2.default.createElement('input', { type: 'radio', name: 'question' }),
-          'No'
         )
       )
     ),
@@ -27444,7 +27465,7 @@ module.exports = traverseAllChildren;
 /* 242 */
 /***/ (function(module, exports) {
 
-module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","FriendsList":["Don, ","Aaron, ","Joe, ","Raj, ","Skye, ","Callan"]}]}
+module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","FriendsList":["Don, ","Aaron, ","Joe, ","Raj, ","Skye, ","Callan, ","Richard, ","Daz, ","Harrison, ","Andrea"]}]}
 
 /***/ })
 /******/ ]);

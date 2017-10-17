@@ -47,19 +47,6 @@ const ProfileRegister = (props) => {
         </div>
       </div>
 
-      <div className="field">
-        <div className="control">
-          <label className="radio">
-            <input type="radio" name="question"/>
-                    Yes
-          </label>
-          <label className="radio">
-            <input type="radio" name="question"/>
-                      No
-          </label>
-        </div>
-      </div>
-
       <div className="field is-grouped">
         <div className="control">
           <button className="button is-link">Submit</button>
