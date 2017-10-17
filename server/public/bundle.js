@@ -434,7 +434,7 @@ module.exports = reactProdInvariant;
 "use strict";
 
 
-module.exports = __webpack_require__(23);
+module.exports = __webpack_require__(22);
 
 
 /***/ }),
@@ -856,7 +856,7 @@ module.exports = warning;
 
 
 
-var _prodInvariant = __webpack_require__(24);
+var _prodInvariant = __webpack_require__(23);
 
 var ReactCurrentOwner = __webpack_require__(15);
 
@@ -1408,7 +1408,7 @@ var _prodInvariant = __webpack_require__(3),
 var CallbackQueue = __webpack_require__(74);
 var PooledClass = __webpack_require__(18);
 var ReactFeatureFlags = __webpack_require__(79);
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 var Transaction = __webpack_require__(36);
 
 var invariant = __webpack_require__(1);
@@ -2625,12 +2625,6 @@ module.exports = ReactElement;
 
 /***/ }),
 /* 20 */
-/***/ (function(module, exports) {
-
-module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"Only 1 buyer needed!"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed "},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!"},{"id":5,"company":"Good as Gold","image":"http://www.gagmagazine.com/wp-content/uploads/2014/06/cropped-GAGmagazine_Logo_Final_SocialMedia_WhiteOnBlack.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!"}]}
-
-/***/ }),
-/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2751,7 +2745,7 @@ DOMLazyTree.queueText = queueText;
 module.exports = DOMLazyTree;
 
 /***/ }),
-/* 22 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2921,7 +2915,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3057,7 +3051,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3097,6 +3091,12 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports) {
+
+module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"Only 1 buyer needed!"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed "},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!"},{"id":5,"company":"Good as Gold","image":"http://www.gagmagazine.com/wp-content/uploads/2014/06/cropped-GAGmagazine_Logo_Final_SocialMedia_WhiteOnBlack.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!"}]}
 
 /***/ }),
 /* 25 */
@@ -5375,7 +5375,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var Danger = __webpack_require__(146);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(12);
@@ -5925,7 +5925,7 @@ var _prodInvariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(84);
 var propTypesFactory = __webpack_require__(71);
 
-var React = __webpack_require__(23);
+var React = __webpack_require__(22);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(1);
@@ -7420,7 +7420,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(20);
+var _data = __webpack_require__(24);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -9318,9 +9318,9 @@ module.exports = ReactInputSelection;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var DOMProperty = __webpack_require__(17);
-var React = __webpack_require__(23);
+var React = __webpack_require__(22);
 var ReactBrowserEventEmitter = __webpack_require__(34);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactDOMComponentTree = __webpack_require__(6);
@@ -9330,7 +9330,7 @@ var ReactFeatureFlags = __webpack_require__(79);
 var ReactInstanceMap = __webpack_require__(29);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactMarkupChecksum = __webpack_require__(178);
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 var ReactUpdateQueue = __webpack_require__(52);
 var ReactUpdates = __webpack_require__(14);
 
@@ -9861,7 +9861,7 @@ module.exports = ReactMount;
 
 var _prodInvariant = __webpack_require__(3);
 
-var React = __webpack_require__(23);
+var React = __webpack_require__(22);
 
 var invariant = __webpack_require__(1);
 
@@ -10933,7 +10933,7 @@ Route.childContextTypes = {
 
 
 
-var _prodInvariant = __webpack_require__(24),
+var _prodInvariant = __webpack_require__(23),
     _assign = __webpack_require__(5);
 
 var ReactNoopUpdateQueue = __webpack_require__(101);
@@ -11745,7 +11745,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(61);
 
-var _data = __webpack_require__(20);
+var _data = __webpack_require__(24);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -11872,7 +11872,7 @@ var _Company = __webpack_require__(107);
 
 var _Company2 = _interopRequireDefault(_Company);
 
-var _data = __webpack_require__(20);
+var _data = __webpack_require__(24);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -12141,7 +12141,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(20);
+var _data = __webpack_require__(24);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -12189,18 +12189,58 @@ var ProfilePage = function ProfilePage(props) {
     _profileData2.default.profile.map(function (profile) {
       return _react2.default.createElement(
         'div',
-        { className: 'profile' },
+        { className: 'card' },
         _react2.default.createElement(
-          'h2',
-          null,
-          'First name: ',
-          profile.firstName
+          'div',
+          { className: 'card-image' },
+          _react2.default.createElement(
+            'figure',
+            { className: 'billImage' },
+            _react2.default.createElement('img', { src: profile.image, alt: 'Placeholder image' })
+          )
         ),
         _react2.default.createElement(
-          'h2',
-          null,
-          'Last name: ',
-          profile.lastName
+          'div',
+          { className: 'card-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'media' },
+            _react2.default.createElement(
+              'div',
+              { className: 'media-content' },
+              _react2.default.createElement(
+                'p',
+                { className: 'title is-4' },
+                profile.firstName,
+                ' ',
+                profile.lastName
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'profileInfo' },
+                _react2.default.createElement(
+                  'p',
+                  { className: 'subtitle is-6 ' },
+                  'email: ',
+                  profile.email
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'subtitle is-6 ' },
+                  'age: ',
+                  profile.Age
+                ),
+                _react2.default.createElement('br', null),
+                _react2.default.createElement(
+                  'p',
+                  { className: 'subtitle is-6 ' },
+                  'Friends: ',
+                  profile.FriendsList
+                )
+              )
+            )
+          )
         )
       );
     })
@@ -12224,7 +12264,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(20);
+var _data = __webpack_require__(24);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -16875,7 +16915,7 @@ module.exports = ChangeEventPlugin;
 
 var _prodInvariant = __webpack_require__(3);
 
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var ExecutionEnvironment = __webpack_require__(7);
 
 var createNodesFromMarkup = __webpack_require__(121);
@@ -17391,7 +17431,7 @@ module.exports = HTMLDOMPropertyConfig;
 
 
 
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 
 var instantiateReactComponent = __webpack_require__(91);
 var KeyEscapeUtils = __webpack_require__(48);
@@ -17582,14 +17622,14 @@ module.exports = ReactComponentBrowserEnvironment;
 var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(5);
 
-var React = __webpack_require__(23);
+var React = __webpack_require__(22);
 var ReactComponentEnvironment = __webpack_require__(50);
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactErrorUtils = __webpack_require__(51);
 var ReactInstanceMap = __webpack_require__(29);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactNodeTypes = __webpack_require__(83);
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(201);
@@ -18488,7 +18528,7 @@ module.exports = ReactCompositeComponent;
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDefaultInjection = __webpack_require__(171);
 var ReactMount = __webpack_require__(82);
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 var ReactUpdates = __webpack_require__(14);
 var ReactVersion = __webpack_require__(186);
 
@@ -18605,7 +18645,7 @@ var _prodInvariant = __webpack_require__(3),
 
 var AutoFocusUtils = __webpack_require__(142);
 var CSSPropertyOperations = __webpack_require__(144);
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var DOMNamespaces = __webpack_require__(46);
 var DOMProperty = __webpack_require__(17);
 var DOMPropertyOperations = __webpack_require__(75);
@@ -19655,7 +19695,7 @@ module.exports = ReactDOMContainerInfo;
 
 var _assign = __webpack_require__(5);
 
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(6);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -20211,7 +20251,7 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 var _assign = __webpack_require__(5);
 
-var React = __webpack_require__(23);
+var React = __webpack_require__(22);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMSelect = __webpack_require__(77);
 
@@ -20554,7 +20594,7 @@ var _prodInvariant = __webpack_require__(3),
     _assign = __webpack_require__(5);
 
 var DOMChildrenOperations = __webpack_require__(45);
-var DOMLazyTree = __webpack_require__(21);
+var DOMLazyTree = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(6);
 
 var escapeTextContentForBrowser = __webpack_require__(37);
@@ -22052,7 +22092,7 @@ var ReactInstanceMap = __webpack_require__(29);
 var ReactInstrumentation = __webpack_require__(12);
 
 var ReactCurrentOwner = __webpack_require__(15);
-var ReactReconciler = __webpack_require__(22);
+var ReactReconciler = __webpack_require__(21);
 var ReactChildReconciler = __webpack_require__(151);
 
 var emptyFunction = __webpack_require__(10);
@@ -26482,7 +26522,7 @@ module.exports = KeyEscapeUtils;
 
 
 
-var _prodInvariant = __webpack_require__(24);
+var _prodInvariant = __webpack_require__(23);
 
 var invariant = __webpack_require__(1);
 
@@ -27052,7 +27092,7 @@ module.exports = '15.6.2';
 
 
 
-var _prodInvariant = __webpack_require__(24);
+var _prodInvariant = __webpack_require__(23);
 
 var ReactPropTypeLocationNames = __webpack_require__(233);
 var ReactPropTypesSecret = __webpack_require__(235);
@@ -27192,7 +27232,7 @@ module.exports = getNextDebugID;
  */
 
 
-var _prodInvariant = __webpack_require__(24);
+var _prodInvariant = __webpack_require__(23);
 
 var ReactElement = __webpack_require__(19);
 
@@ -27235,7 +27275,7 @@ module.exports = onlyChild;
 
 
 
-var _prodInvariant = __webpack_require__(24);
+var _prodInvariant = __webpack_require__(23);
 
 var ReactCurrentOwner = __webpack_require__(15);
 var REACT_ELEMENT_TYPE = __webpack_require__(99);
@@ -27404,7 +27444,7 @@ module.exports = traverseAllChildren;
 /* 242 */
 /***/ (function(module, exports) {
 
-module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","Friends list":["Don","Aaron","Joe","Raj","Skye","Callan"]}]}
+module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","FriendsList":["Don, ","Aaron, ","Joe, ","Raj, ","Skye, ","Callan"]}]}
 
 /***/ })
 /******/ ]);

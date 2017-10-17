@@ -8,8 +8,7 @@ const Header = (props) => {
           <input className="input" type="text"/>
         </div>
         <div className="control">
-          <a className="button is-info">
-            Search
+          <a className="button is-info">Search
           </a>
         </div>
       </div>
