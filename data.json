@@ -13,7 +13,8 @@
       "company": "Pagani",
       "image": "https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg",
       "Deal": "Buy one get your 2nd sweater 50% off",
-      "Buyers": "female"
+      "Buyers": "Only 1 buyer needed!",
+      "gender": "female"
     },
     {
       "id": 3,

@@ -52,9 +52,11 @@ const NavBar = (props) => {
                 Deals
             </a>
             <div className="navbar-dropdown is-boxed">
-              <a className="navbar-item has-dropdown is-hoverable">
+              <div className="navbar-item has-dropdown is-hoverable">
+                <Link to='/mens'>
                   Mens
-              </a>
+                </Link>
+              </div>
               <a className="navbar-item">
                   Womens
               </a>
