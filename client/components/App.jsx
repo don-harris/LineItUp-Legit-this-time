@@ -10,6 +10,7 @@ import ProfileLogin from './profileComponents/ProfileLogin'
 import ProfilePage from './profileComponents/ProfilePage'
 import ProfileRegister from './profileComponents/ProfileRegister'
 import Mens from './DealComponents/Mens'
+import Womens from './DealComponents/Womens'
 
 class App extends React.Component {
   // constructor (props) {
@@ -31,6 +32,7 @@ class App extends React.Component {
           <Route exact path='/profile' component={ProfilePage} />
           <Route exact path='/register' component={ProfileRegister} />
           <Route exact path='/mens' component={Mens} />
+          <Route exact path='/womens' component={Womens} />
           <hr />
           <Footer />
         </div>

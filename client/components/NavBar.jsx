@@ -57,9 +57,11 @@ const NavBar = (props) => {
                   Mens
                 </Link>
               </div>
-              <a className="navbar-item">
+              <div className="navbar-item">
+                <Link to='/womens'>
                   Womens
-              </a>
+                </Link>
+              </div>
               <a className="navbar-item">
                   Children
               </a>
