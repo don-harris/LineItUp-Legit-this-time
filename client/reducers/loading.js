@@ -1,4 +1,4 @@
-import {SHOW_ERROR, REQUEST_DEALS, RECEIVE_DEALS} from '../actions'
+import {SHOW_ERROR, REQUEST_DEALS, RECEIVE_DEALS, RESET} from '../actions'
 
 const loading = (state = false, action) => {
   switch (action.type) {
@@ -9,6 +9,9 @@ const loading = (state = false, action) => {
       return false
 
     case SHOW_ERROR:
+      return false
+
+    case RESET:
       return false
 
     default:

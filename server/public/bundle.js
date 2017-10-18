@@ -5177,6 +5177,7 @@ var resetSearch = exports.resetSearch = function resetSearch() {
 
 function fetchDeals(searchTerm) {
   return function (dispatch) {
+    dispatch(requestDeals());
     dispatch(searchDeals(searchTerm.toLowerCase()));
   };
 }
@@ -13560,6 +13561,10 @@ var _reactRedux = __webpack_require__(41);
 
 var _actions = __webpack_require__(43);
 
+var _Loading = __webpack_require__(290);
+
+var _Loading2 = _interopRequireDefault(_Loading);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -13620,7 +13625,8 @@ var SearchBar = function (_React$Component) {
             { onClick: this.reset.bind(this), className: 'button is-info' },
             'RESET'
           )
-        )
+        ),
+        _react2.default.createElement(_Loading2.default, null)
       );
     }
   }]);
@@ -14011,6 +14017,9 @@ var loading = function loading() {
       return false;
 
     case _actions.SHOW_ERROR:
+      return false;
+
+    case _actions.RESET:
       return false;
 
     default:
@@ -30154,6 +30163,41 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","FriendsList":["Don, ","Aaron, ","Joe, ","Raj, ","Skye, ","Callan, ","Richard, ","Daz, ","Harrison, ","Andrea"]}]}
+
+/***/ }),
+/* 290 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRedux = __webpack_require__(41);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Loading = function Loading(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: 'error' },
+    props.loading && _react2.default.createElement('img', { src: 'https://i.redd.it/ounq1mw5kdxy.gif' })
+  );
+};
+
+function mapStateToProps(state) {
+  return {
+    loading: state.loading
+  };
+}
+
+exports.default = (0, _reactRedux.connect)(mapStateToProps)(Loading);
 
 /***/ })
 /******/ ]);

@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchDeals, resetSearch } from '../actions'
+import Loading from './Loading'
 
 class SearchBar extends React.Component {
   constructor (props) {
@@ -17,7 +18,7 @@ class SearchBar extends React.Component {
     })
     this.props.dispatch(fetchDeals(evt.target.value))
   }
-  reset() {
+  reset () {
     this.setState({deal: ''})
     this.props.dispatch(resetSearch())
   }
@@ -31,6 +32,7 @@ class SearchBar extends React.Component {
           <button onClick={this.reset.bind(this)} className="button is-info">RESET
           </button>
         </span>
+        <Loading />
       </div>
     )
   }

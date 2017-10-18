@@ -33,6 +33,7 @@ export const resetSearch = () => {
 
 export function fetchDeals (searchTerm) {
   return (dispatch) => {
+    dispatch(requestDeals())
     dispatch(searchDeals(searchTerm.toLowerCase()))
   }
 }
