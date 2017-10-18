@@ -10,7 +10,6 @@ function solvePath (pathname) {
 }
 
 const NavBar = (props) => {
-  console.log(props)
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
