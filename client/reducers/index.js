@@ -4,6 +4,6 @@ import searchBar from './searchBar'
 import loading from './loading'
 
 export default combineReducers({
-  searchBar,
+  deals: searchBar,
   loading
 })

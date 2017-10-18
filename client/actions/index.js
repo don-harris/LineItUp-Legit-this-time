@@ -1,8 +1,9 @@
-import testData from '../../data.json'
+import data from '../../data.json'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
-export const RECEIVE_DEALS = 'RECEIVE_DEALS'
+export const SEARCH_DEALS = 'SEARCH_DEALS'
 export const REQUEST_DEALS = 'REQUEST_DEALS'
+export const RESET = 'RESET'
 
 export const requestDeals = () => {
   return {
@@ -10,10 +11,10 @@ export const requestDeals = () => {
   }
 }
 
-export const receiveDeals = (deals) => {
+export const searchDeals = (searchTerm) => {
   return {
-    type: RECEIVE_DEALS,
-    posts: testData.deals.map(deal => deals.company)
+    type: SEARCH_DEALS,
+    searchTerm
   }
 }
 
@@ -24,16 +25,14 @@ export const showError = (errorMessage) => {
   }
 }
 
-export function fetchDeals (deals) {
+export const resetSearch = () => {
+  return {
+    type: RESET
+  }
+}
+
+export function fetchDeals (searchTerm) {
   return (dispatch) => {
-    dispatch(requestDeals(deals))
-      .get(testData)
-      .end((err, res) => {
-        if (err) {
-          dispatch(showError(err.message))
-          return
-        }
-        dispatch(receiveDeals(res.body))
-      })
+    dispatch(searchDeals(searchTerm.toLowerCase()))
   }
 }

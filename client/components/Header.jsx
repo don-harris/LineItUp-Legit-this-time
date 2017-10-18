@@ -5,8 +5,7 @@ import SearchBar from './SearchBar'
 const Header = (props) => {
   return (
     <div className="columns has-text-centered section">
-        <SearchBar />
-
+      <SearchBar />
       <div className="column is-6">
         <h1 className="title is-1 has-text-centered">LineItUp</h1>
       </div>
