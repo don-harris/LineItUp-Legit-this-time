@@ -1,17 +1,11 @@
 import React from 'react'
 
+import SearchBar from './SearchBar'
+
 const Header = (props) => {
   return (
     <div className="columns has-text-centered section">
-      <div className="field has-addons column">
-        <div className="control">
-          <input className="input" type="text"/>
-        </div>
-        <div className="control">
-          <a className="button is-info">Search
-          </a>
-        </div>
-      </div>
+      <SearchBar />
       <div className="column is-6">
         <h1 className="title is-1 has-text-centered">LineItUp</h1>
       </div>
