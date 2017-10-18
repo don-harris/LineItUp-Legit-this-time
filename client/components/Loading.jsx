@@ -6,7 +6,7 @@ const Loading = (props) => {
     <div className='error'>
       {
         props.loading &&
-        <img src='https://i.redd.it/ounq1mw5kdxy.gif' />
+        <img src='/images/loadingSymbol.gif' />
       }
     </div>
   )
