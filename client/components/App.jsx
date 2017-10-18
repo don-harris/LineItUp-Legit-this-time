@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="container">
-          <Header/>
+          <Route path='/' component={Header} />
           <Route path='/' component={NavBar} />
           <hr/>
           <Route exact path='/' component={Container} />

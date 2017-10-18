@@ -1,7 +1,16 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
+function solvePath (pathname) {
+  switch(pathname) {
+    case '/mens': return 'Mens'
+    case '/womens': return 'Womens'
+    default: return ''
+  }
+}
+
 const NavBar = (props) => {
+  console.log(props)
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
@@ -71,6 +80,7 @@ const NavBar = (props) => {
             </div>
 
           </div>
+        <h1 className="navbar-item">{solvePath(props.location.pathname)}</h1>
         </div>
       </div>
     </nav>

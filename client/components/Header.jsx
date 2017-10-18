@@ -3,14 +3,14 @@ import React from 'react'
 const Header = (props) => {
   return (
     <div className="columns has-text-centered section">
-      <div className="field has-addons column">
-        <div className="control">
+      <div className="field has-addons column level">
+        <span className="control">
           <input className="input" type="text"/>
-        </div>
-        <div className="control">
+        </span>
+        <span className="control">
           <a className="button is-info">Search
           </a>
-        </div>
+        </span>
       </div>
       <div className="column is-6">
         <h1 className="title is-1 has-text-centered">LineItUp</h1>
