@@ -1,0 +1,16 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "firstName": "Bill",
+      "lastName": "Murray",
+      "image": "https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg",
+      "email": "themurricane42@gmail.com",
+      "Current Deals needed": "",
+      "Age": "67",
+      "FriendsList": [
+        "Don, ", "Aaron, ", "Joe, ", "Raj, ", "Skye, ", "Callan, ", "Richard, ", "Daz, ", "Harrison, ", "Andrea"
+      ]
+    }
+  ]
+}

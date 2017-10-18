@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const NavBar = (props) => {
   return (
@@ -12,27 +13,32 @@ const NavBar = (props) => {
           <span></span>
         </button>
       </div>
+      <div className="navbar-item">
+        <Link to='/'>
+         Home
+        </Link>
+      </div>
 
-      <a className="navbar-item">
-        <span></span>
-        Home
-      </a>
-
-   
       <div className="navbar-item has-dropdown is-hoverable">
         <a className="navbar-link  is-active">
           Profile
         </a>
         <div className="navbar-dropdown is-boxed">
-          <a className="navbar-item ">
+          <div className="navbar-item ">
+            <Link to='/login'>
             Login
-          </a>
-          <a className="navbar-item">
+            </Link>
+          </div>
+          <div className="navbar-item ">
+            <Link to='/register'>
             Register
-          </a>
-          <a className="navbar-item">
+            </Link>
+          </div>
+          <div className="navbar-item ">
+            <Link to='/profile'>
             Profile page
-          </a>
+            </Link>
+          </div>
           <a className="navbar-item">
             Sign out
           </a>
@@ -46,12 +52,16 @@ const NavBar = (props) => {
                 Deals
             </a>
             <div className="navbar-dropdown is-boxed">
-              <a className="navbar-item ">
+              <div className="navbar-item has-dropdown is-hoverable">
+                <Link to='/mens'>
                   Mens
-              </a>
-              <a className="navbar-item">
+                </Link>
+              </div>
+              <div className="navbar-item">
+                <Link to='/womens'>
                   Womens
-              </a>
+                </Link>
+              </div>
               <a className="navbar-item">
                   Children
               </a>
