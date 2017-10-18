@@ -4,10 +4,13 @@ import { connect } from 'react-redux'
 const Loading = (props) => {
   return (
     <div className='error'>
-      {
-        props.loading &&
-        <img src='/images/loadingSymbol.gif' />
-      }
+      <span className="control">
+        <button style={{width: '70px'}} onClick={props.reset} className="button is-info">{props.loading
+          ? <span className="image icon is-large"><img src='/images/loadingSymbol.gif' /></span>
+          : 'RESET'
+        }
+        </button>
+      </span>
     </div>
   )
 }

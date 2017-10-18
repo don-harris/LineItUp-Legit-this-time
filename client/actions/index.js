@@ -31,9 +31,16 @@ export const resetSearch = () => {
   }
 }
 
+export const stopLoading = () => {
+  return {
+    type: 'STOP_LOADING'
+  }
+}
+
 export function fetchDeals (searchTerm) {
   return (dispatch) => {
     dispatch(requestDeals())
     dispatch(searchDeals(searchTerm.toLowerCase()))
+    setTimeout(() => dispatch(stopLoading()), 5000)
   }
 }

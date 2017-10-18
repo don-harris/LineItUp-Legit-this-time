@@ -5135,7 +5135,7 @@ if (process.env.NODE_ENV !== 'production' && typeof isCrushed.name === 'string' 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.resetSearch = exports.showError = exports.searchDeals = exports.requestDeals = exports.RESET = exports.REQUEST_DEALS = exports.SEARCH_DEALS = exports.SHOW_ERROR = undefined;
+exports.stopLoading = exports.resetSearch = exports.showError = exports.searchDeals = exports.requestDeals = exports.RESET = exports.REQUEST_DEALS = exports.SEARCH_DEALS = exports.SHOW_ERROR = undefined;
 exports.fetchDeals = fetchDeals;
 
 var _data = __webpack_require__(14);
@@ -5175,10 +5175,19 @@ var resetSearch = exports.resetSearch = function resetSearch() {
   };
 };
 
+var stopLoading = exports.stopLoading = function stopLoading() {
+  return {
+    type: 'STOP_LOADING'
+  };
+};
+
 function fetchDeals(searchTerm) {
   return function (dispatch) {
     dispatch(requestDeals());
     dispatch(searchDeals(searchTerm.toLowerCase()));
+    setTimeout(function () {
+      return dispatch(stopLoading());
+    }, 5000);
   };
 }
 
@@ -13405,7 +13414,19 @@ var Loading = function Loading(props) {
   return _react2.default.createElement(
     'div',
     { className: 'error' },
-    props.loading && _react2.default.createElement('img', { src: '/images/loadingSymbol.gif' })
+    _react2.default.createElement(
+      'span',
+      { className: 'control' },
+      _react2.default.createElement(
+        'button',
+        { style: { width: '70px' }, onClick: props.reset, className: 'button is-info' },
+        props.loading ? _react2.default.createElement(
+          'span',
+          { className: 'image icon is-large' },
+          _react2.default.createElement('img', { src: '/images/loadingSymbol.gif' })
+        ) : 'RESET'
+      )
+    )
   );
 };
 
@@ -13644,7 +13665,7 @@ var SearchBar = function (_React$Component) {
 
       return _react2.default.createElement(
         'div',
-        { className: 'field has-addons column level' },
+        { className: 'field  has-addons column level' },
         _react2.default.createElement(
           'span',
           { className: 'control' },
@@ -13652,16 +13673,7 @@ var SearchBar = function (_React$Component) {
               return _this2.handleChange(e);
             }, value: this.state.deal, type: 'text', placeholder: 'Search...', className: 'input' })
         ),
-        _react2.default.createElement(
-          'span',
-          { className: 'control' },
-          _react2.default.createElement(
-            'button',
-            { onClick: this.reset.bind(this), className: 'button is-info' },
-            'RESET'
-          )
-        ),
-        _react2.default.createElement(_Loading2.default, null)
+        _react2.default.createElement(_Loading2.default, { reset: this.reset.bind(this) })
       );
     }
   }]);
@@ -14056,7 +14068,8 @@ var loading = function loading() {
 
     case _actions.RESET:
       return false;
-
+    case 'STOP_LOADING':
+      return false;
     default:
       return state;
   }

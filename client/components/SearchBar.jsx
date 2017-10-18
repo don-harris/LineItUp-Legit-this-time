@@ -24,15 +24,11 @@ class SearchBar extends React.Component {
   }
   render () {
     return (
-      <div className="field has-addons column level">
+      <div className="field  has-addons column level">
         <span className="control">
           <input onChange={(e) => this.handleChange(e)} value={this.state.deal} type="text" placeholder="Search..." className="input" />
         </span>
-        <span className="control">
-          <button onClick={this.reset.bind(this)} className="button is-info">RESET
-          </button>
-        </span>
-        <Loading />
+        <Loading reset={this.reset.bind(this)}/>
       </div>
     )
   }
