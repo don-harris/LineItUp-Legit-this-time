@@ -5187,7 +5187,7 @@ function fetchDeals(searchTerm) {
     dispatch(searchDeals(searchTerm.toLowerCase()));
     setTimeout(function () {
       return dispatch(stopLoading());
-    }, 5000);
+    }, 4000);
   };
 }
 

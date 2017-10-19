@@ -41,6 +41,6 @@ export function fetchDeals (searchTerm) {
   return (dispatch) => {
     dispatch(requestDeals())
     dispatch(searchDeals(searchTerm.toLowerCase()))
-    setTimeout(() => dispatch(stopLoading()), 5000)
+    setTimeout(() => dispatch(stopLoading()), 4000)
   }
 }
