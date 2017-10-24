@@ -11,6 +11,7 @@ import ProfilePage from './profileComponents/ProfilePage'
 import ProfileRegister from './profileComponents/ProfileRegister'
 import Mens from './DealComponents/Mens'
 import Womens from './DealComponents/Womens'
+import AboutUs from './AboutUs'
 
 class App extends React.Component {
   // constructor (props) {
@@ -33,6 +34,7 @@ class App extends React.Component {
           <Route exact path='/register' component={ProfileRegister} />
           <Route exact path='/mens' component={Mens} />
           <Route exact path='/womens' component={Womens} />
+          <Route exact path='/aboutus' component={AboutUs} />
           <hr />
           <Footer />
         </div>

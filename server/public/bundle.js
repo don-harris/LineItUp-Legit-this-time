@@ -12756,6 +12756,10 @@ var _Womens = __webpack_require__(129);
 
 var _Womens2 = _interopRequireDefault(_Womens);
 
+var _AboutUs = __webpack_require__(291);
+
+var _AboutUs2 = _interopRequireDefault(_AboutUs);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12799,6 +12803,7 @@ var App = function (_React$Component) {
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/register', component: _ProfileRegister2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/mens', component: _Mens2.default }),
           _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/womens', component: _Womens2.default }),
+          _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/aboutus', component: _AboutUs2.default }),
           _react2.default.createElement('hr', null),
           _react2.default.createElement(_Footer2.default, null)
         )
@@ -13317,26 +13322,32 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouterDom = __webpack_require__(31);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Footer = function Footer(props) {
   return _react2.default.createElement(
-    "div",
-    { className: "footer has-text-centered" },
+    'div',
+    { className: 'footer has-text-centered' },
     _react2.default.createElement(
-      "h4",
+      'h4',
       null,
-      "\xA9 2017 D J Company"
+      '\xA9 2017 D J Company'
     ),
     _react2.default.createElement(
-      "h5",
-      null,
-      "About"
+      _reactRouterDom.Link,
+      { to: '/aboutus' },
+      _react2.default.createElement(
+        'h5',
+        null,
+        'About'
+      )
     ),
     _react2.default.createElement(
-      "h5",
+      'h5',
       null,
-      "Contact us"
+      'Contact us'
     )
   );
 };
@@ -30211,6 +30222,37 @@ module.exports = function(module) {
 /***/ (function(module, exports) {
 
 module.exports = {"profile":[{"id":1,"firstName":"Bill","lastName":"Murray","image":"https://i.pinimg.com/736x/50/4b/a6/504ba6b5d11059aaf43cf0e248ba39d8--elephant-gifts-bill-murray.jpg","email":"themurricane42@gmail.com","Current Deals needed":"","Age":"67","FriendsList":["Don, ","Aaron, ","Joe, ","Raj, ","Skye, ","Callan, ","Richard, ","Daz, ","Harrison, ","Andrea"]}]}
+
+/***/ }),
+/* 291 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(3);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var AboutUs = function AboutUs(props) {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      'h2',
+      null,
+      'Welcome to About Us'
+    )
+  );
+};
+
+exports.default = AboutUs;
 
 /***/ })
 /******/ ]);
