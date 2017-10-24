@@ -1,22 +1,24 @@
-
 import React from 'react'
 import { connect } from 'react-redux'
 
-const WaitIndicator = (props) => {
+const Loading = (props) => {
   return (
     <div className='error'>
-      {
-        props.waiting &&
-        <img src='https://i.redd.it/ounq1mw5kdxy.gif' />
-      }
+      <span className="control">
+        <button style={{width: '70px'}} onClick={props.reset} className="button is-info">{props.loading
+          ? <span className="image icon is-large"><img src='/images/loadingSymbol.gif' /></span>
+          : 'RESET'
+        }
+        </button>
+      </span>
     </div>
   )
 }
 
 function mapStateToProps (state) {
   return {
-    waiting: state.waiting
+    loading: state.loading
   }
 }
 
-export default connect(mapStateToProps)(WaitIndicator)
+export default connect(mapStateToProps)(Loading)
