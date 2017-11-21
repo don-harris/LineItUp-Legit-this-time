@@ -1,8 +1,9 @@
 import React from 'react'
 import Company from './Company'
 import { connect } from 'react-redux'
+import {getDeals} from '../actions/index'
 
-import testData from '../../data.json'
+// import testData from '../../data.json'
 
 const Container = (props) => {
   return (

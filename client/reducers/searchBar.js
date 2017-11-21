@@ -1,15 +1,14 @@
-import { RECEIVE_DEALS, SEARCH_DEALS, RESET } from '../actions'
-import data from '../../data.json'
-const intitialDeals = data.deals
+import { SEARCH_DEALS, RESET } from '../actions'
+// import data from '../../data.json'
 
-function deals (deals = intitialDeals, action) {
+function deals (deals, action) {
   switch (action.type) {
-    case RECEIVE_DEALS:
-      return action.deals
+    // case RECEIVE_DEALS:
+    //   return action.deals
     case SEARCH_DEALS:
-      return [...data.deals].filter(deal => deal.company.toLowerCase().includes(action.searchTerm) || deal.Deal.toLowerCase().includes(action.searchTerm))
+      return [...action.deals].filter(deal => deal.company.toLowerCase().includes(action.searchTerm) || deal.Deal.toLowerCase().includes(action.searchTerm))
     case RESET:
-      return [...data.deals]
+      return [...deals]
     default:
       return deals
   }

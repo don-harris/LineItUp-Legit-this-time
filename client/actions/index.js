@@ -1,4 +1,4 @@
-import data from '../../data.json'
+import { getDeals } from '../client-api'
 
 export const SHOW_ERROR = 'SHOW_ERROR'
 export const SEARCH_DEALS = 'SEARCH_DEALS'
@@ -11,9 +11,10 @@ export const requestDeals = () => {
   }
 }
 
-export const searchDeals = (searchTerm) => {
+export const searchDeals = (deals, searchTerm) => {
   return {
     type: SEARCH_DEALS,
+    deals: deals,
     searchTerm
   }
 }
@@ -39,8 +40,11 @@ export const stopLoading = () => {
 
 export function fetchDeals (searchTerm) {
   return (dispatch) => {
-    dispatch(requestDeals())
-    dispatch(searchDeals(searchTerm.toLowerCase()))
-    setTimeout(() => dispatch(stopLoading()), 4000)
+    getDeals()
+      .then(deals => {
+        dispatch(requestDeals())
+        dispatch(searchDeals(searchTerm.toLowerCase()))
+        setTimeout(() => dispatch(stopLoading()), 4000)
+      })
   }
 }
