@@ -4,6 +4,7 @@ export const SHOW_ERROR = 'SHOW_ERROR'
 export const SEARCH_DEALS = 'SEARCH_DEALS'
 export const REQUEST_DEALS = 'REQUEST_DEALS'
 export const RESET = 'RESET'
+export const RECEIVE_DEALS = 'RECEIVE_DEALS'
 
 export const requestDeals = () => {
   return {
@@ -11,7 +12,15 @@ export const requestDeals = () => {
   }
 }
 
+export const receiveDeals = (deals) => {
+  return {
+    type: RECEIVE_DEALS,
+    deals
+  }
+}
+
 export const searchDeals = (deals, searchTerm) => {
+  console.log(deals)
   return {
     type: SEARCH_DEALS,
     deals: deals,
@@ -41,10 +50,11 @@ export const stopLoading = () => {
 export function fetchDeals (searchTerm) {
   return (dispatch) => {
     getDeals()
-      .then(deals => {
+      .then(res => {
         dispatch(requestDeals())
-        dispatch(searchDeals(searchTerm.toLowerCase()))
-        setTimeout(() => dispatch(stopLoading()), 4000)
+        dispatch(receiveDeals(res.body))
+        dispatch(searchDeals(res.body, searchTerm.toLowerCase()))
+        setTimeout(() => dispatch                                                                                                                                   (stopLoading()), 4000)
       })
   }
 }

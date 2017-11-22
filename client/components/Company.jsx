@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import testData from '../../data.json'
+// import testData from '../../data.json'
 
 import Deal from './DealComponents/Deal'
 
@@ -29,7 +29,7 @@ class Company extends React.Component {
           <img src={this.props.deal.image}/>
           <br/>
           <div className="subtitle is-3 is-cyan">
-            <h2>{this.props.deal.Deal}</h2>
+            <h2>{this.props.deal.deal}</h2>
           </div>
           <button className="button"><Link to={`/deal/${this.props.deal.id}`}>Line It Up!</Link></button>{this.props.deal.Buyers}
         </div>

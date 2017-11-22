@@ -551,7 +551,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(4);
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var ReactDOMComponentFlags = __webpack_require__(83);
 
 var invariant = __webpack_require__(1);
@@ -1406,7 +1406,7 @@ var _prodInvariant = __webpack_require__(4),
     _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(81);
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 var ReactFeatureFlags = __webpack_require__(86);
 var ReactReconciler = __webpack_require__(22);
 var Transaction = __webpack_require__(39);
@@ -1691,7 +1691,7 @@ module.exports = ReactCurrentOwner;
 
 var _assign = __webpack_require__(5);
 
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 
 var emptyFunction = __webpack_require__(11);
 var warning = __webpack_require__(2);
@@ -1951,12 +1951,6 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 
 /***/ }),
 /* 17 */
-/***/ (function(module, exports) {
-
-module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!","gender":"male"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed!","gender":"male"},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":5,"company":"Country Road","image":"https://upload.wikimedia.org/wikipedia/en/f/f2/Country_Road_company_logo.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!","gender":"male"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!","gender":"male"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!","gender":"male"}]}
-
-/***/ }),
-/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2169,7 +2163,7 @@ module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 19 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2285,7 +2279,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2630,6 +2624,12 @@ module.exports = ReactElement;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+module.exports = {"deals":[{"id":1,"company":"Hallensteins","image":"https://upload.wikimedia.org/wikipedia/commons/4/4a/Hallenstein_brothers_organisation_logo.gif","Deal":"3 Pairs of Jeans for $99","Buyers":"Only 1 buyer needed!","gender":"male"},{"id":2,"company":"Pagani","image":"https://www.richmondmall.co.nz/assets/Uploads/pagani.jpg","Deal":"Buy one get your 2nd sweater 50% off","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":3,"company":"Barkers","image":"https://pbs.twimg.com/profile_images/508840441647603714/B4MMCq_V.jpeg","Deal":"2 Suit Jackets for $99","Buyers":"2 Buyers needed!","gender":"male"},{"id":4,"company":"Kimberleys","image":"http://remuera.org.nz/media/k2/items/cache/233826a67be66a810b23a263230da62e_XL.jpg","Deal":"Buy 2 dresses get 2 free scarves","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":5,"company":"Country Road","image":"https://upload.wikimedia.org/wikipedia/en/f/f2/Country_Road_company_logo.jpg","Deal":"3 Sweaters for $99","Buyers":"3 Buyers Needed!","gender":"male"},{"id":6,"company":"Witchery","image":"https://res-2.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/e47vzegi1dbeshkm0vyj.png","Deal":"2 Pleat Sleeve Trench coats for $149","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":7,"company":"Tarocash","image":"http://dfojindalee.com.au/wp-content/uploads/2017/02/TO0271-DFOSuitPromoSocial_Insta1080x1080_logo.jpg","Deal":"2 Short sleeve shirts for $90","Buyers":"2 Buyers needed!","gender":"male"},{"id":8,"company":"Glassons","image":"https://res-5.cloudinary.com/wlabs/image/fetch/c_pad,f_auto,q_auto/http://res.cloudinary.com/wlabs/image/upload/xgexemh2ymphjubo6k7f.png","Deal":"Blouses 2 for $45","Buyers":"Only 1 buyer needed!","gender":"female"},{"id":9,"company":"I Love Ugly","image":"https://pbs.twimg.com/profile_images/695111528740057088/HtBmVwI2.jpg","Deal":"4 Tees For $90","Buyers":"4 Buyers needed!","gender":"male"}]}
+
+/***/ }),
 /* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2940,7 +2940,7 @@ var _assign = __webpack_require__(5);
 var ReactBaseClasses = __webpack_require__(109);
 var ReactChildren = __webpack_require__(275);
 var ReactDOMFactories = __webpack_require__(276);
-var ReactElement = __webpack_require__(20);
+var ReactElement = __webpack_require__(19);
 var ReactPropTypes = __webpack_require__(278);
 var ReactVersion = __webpack_require__(280);
 
@@ -3851,7 +3851,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.stopLoading = exports.resetSearch = exports.showError = exports.searchDeals = exports.requestDeals = exports.RESET = exports.REQUEST_DEALS = exports.SEARCH_DEALS = exports.SHOW_ERROR = undefined;
+exports.stopLoading = exports.resetSearch = exports.showError = exports.searchDeals = exports.receiveDeals = exports.requestDeals = exports.RECEIVE_DEALS = exports.RESET = exports.REQUEST_DEALS = exports.SEARCH_DEALS = exports.SHOW_ERROR = undefined;
 exports.fetchDeals = fetchDeals;
 
 var _clientApi = __webpack_require__(125);
@@ -3860,6 +3860,7 @@ var SHOW_ERROR = exports.SHOW_ERROR = 'SHOW_ERROR';
 var SEARCH_DEALS = exports.SEARCH_DEALS = 'SEARCH_DEALS';
 var REQUEST_DEALS = exports.REQUEST_DEALS = 'REQUEST_DEALS';
 var RESET = exports.RESET = 'RESET';
+var RECEIVE_DEALS = exports.RECEIVE_DEALS = 'RECEIVE_DEALS';
 
 var requestDeals = exports.requestDeals = function requestDeals() {
   return {
@@ -3867,7 +3868,15 @@ var requestDeals = exports.requestDeals = function requestDeals() {
   };
 };
 
+var receiveDeals = exports.receiveDeals = function receiveDeals(deals) {
+  return {
+    type: RECEIVE_DEALS,
+    deals: deals
+  };
+};
+
 var searchDeals = exports.searchDeals = function searchDeals(deals, searchTerm) {
+  console.log(deals);
   return {
     type: SEARCH_DEALS,
     deals: deals,
@@ -3896,9 +3905,10 @@ var stopLoading = exports.stopLoading = function stopLoading() {
 
 function fetchDeals(searchTerm) {
   return function (dispatch) {
-    (0, _clientApi.getDeals)().then(function (deals) {
+    (0, _clientApi.getDeals)().then(function (res) {
       dispatch(requestDeals());
-      dispatch(searchDeals(searchTerm.toLowerCase()));
+      dispatch(receiveDeals(res.body));
+      dispatch(searchDeals(res.body, searchTerm.toLowerCase()));
       setTimeout(function () {
         return dispatch(stopLoading());
       }, 4000);
@@ -7641,7 +7651,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -8785,7 +8795,7 @@ var _prodInvariant = __webpack_require__(4);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 
 var invariant = __webpack_require__(1);
 
@@ -8903,7 +8913,7 @@ module.exports = PooledClass.addPoolingTo(CallbackQueue);
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInstrumentation = __webpack_require__(13);
 
@@ -9626,7 +9636,7 @@ module.exports = ReactInputSelection;
 var _prodInvariant = __webpack_require__(4);
 
 var DOMLazyTree = __webpack_require__(21);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var React = __webpack_require__(23);
 var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactCurrentOwner = __webpack_require__(15);
@@ -11843,7 +11853,7 @@ module.exports = REACT_ELEMENT_TYPE;
 
 var ReactCurrentOwner = __webpack_require__(15);
 var ReactComponentTreeHook = __webpack_require__(10);
-var ReactElement = __webpack_require__(20);
+var ReactElement = __webpack_require__(19);
 
 var checkReactTypeSpec = __webpack_require__(281);
 
@@ -12940,10 +12950,6 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(31);
 
-var _data = __webpack_require__(17);
-
-var _data2 = _interopRequireDefault(_data);
-
 var _Deal = __webpack_require__(70);
 
 var _Deal2 = _interopRequireDefault(_Deal);
@@ -12955,6 +12961,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+// import testData from '../../data.json'
 
 var Company = function (_React$Component) {
   _inherits(Company, _React$Component);
@@ -12996,7 +13003,7 @@ var Company = function (_React$Component) {
             _react2.default.createElement(
               'h2',
               null,
-              this.props.deal.Deal
+              this.props.deal.deal
             )
           ),
           _react2.default.createElement(
@@ -13118,7 +13125,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(31);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -13202,7 +13209,7 @@ var _Men = __webpack_require__(128);
 
 var _Men2 = _interopRequireDefault(_Men);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -13241,7 +13248,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(31);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -13325,7 +13332,7 @@ var _Woman = __webpack_require__(130);
 
 var _Woman2 = _interopRequireDefault(_Woman);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -13688,6 +13695,11 @@ var SearchBar = function (_React$Component) {
   }
 
   _createClass(SearchBar, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.props.dispatch((0, _actions.fetchDeals)());
+    }
+  }, {
     key: 'handleChange',
     value: function handleChange(evt) {
       this.setState({
@@ -13741,59 +13753,57 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(17);
-
-var _data2 = _interopRequireDefault(_data);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import testData from '../../../data.json'
 
 var ProfileLogin = function ProfileLogin(props) {
   return _react2.default.createElement(
-    'div',
+    "div",
     null,
     _react2.default.createElement(
-      'div',
-      { className: 'field' },
+      "div",
+      { className: "field" },
       _react2.default.createElement(
-        'p',
-        { className: 'control has-icons-left has-icons-right' },
-        _react2.default.createElement('input', { className: 'input', type: 'email', placeholder: 'Email' }),
+        "p",
+        { className: "control has-icons-left has-icons-right" },
+        _react2.default.createElement("input", { className: "input", type: "email", placeholder: "Email" }),
         _react2.default.createElement(
-          'span',
-          { className: 'icon is-small is-left' },
-          _react2.default.createElement('i', { className: 'fa fa-envelope' })
+          "span",
+          { className: "icon is-small is-left" },
+          _react2.default.createElement("i", { className: "fa fa-envelope" })
         ),
         _react2.default.createElement(
-          'span',
-          { className: 'icon is-small is-right' },
-          _react2.default.createElement('i', { className: 'fa fa-check' })
+          "span",
+          { className: "icon is-small is-right" },
+          _react2.default.createElement("i", { className: "fa fa-check" })
         )
       )
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'field' },
+      "div",
+      { className: "field" },
       _react2.default.createElement(
-        'p',
-        { className: 'control has-icons-left' },
-        _react2.default.createElement('input', { className: 'input', type: 'password', placeholder: 'Password' }),
+        "p",
+        { className: "control has-icons-left" },
+        _react2.default.createElement("input", { className: "input", type: "password", placeholder: "Password" }),
         _react2.default.createElement(
-          'span',
-          { className: 'icon is-small is-left' },
-          _react2.default.createElement('i', { className: 'fa fa-lock' })
+          "span",
+          { className: "icon is-small is-left" },
+          _react2.default.createElement("i", { className: "fa fa-lock" })
         )
       )
     ),
     _react2.default.createElement(
-      'div',
-      { className: 'field' },
+      "div",
+      { className: "field" },
       _react2.default.createElement(
-        'p',
-        { className: 'control' },
+        "p",
+        { className: "control" },
         _react2.default.createElement(
-          'button',
-          { className: 'button is-success' },
-          'Login'
+          "button",
+          { className: "button is-success" },
+          "Login"
         )
       )
     )
@@ -13905,7 +13915,7 @@ var _react = __webpack_require__(3);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _data = __webpack_require__(17);
+var _data = __webpack_require__(20);
 
 var _data2 = _interopRequireDefault(_data);
 
@@ -14137,18 +14147,21 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 // import data from '../../data.json'
 
-function deals(deals, action) {
+function deals() {
+  var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+  var action = arguments[1];
+
   switch (action.type) {
-    // case RECEIVE_DEALS:
-    //   return action.deals
+    case _actions.RECEIVE_DEALS:
+      return action.deals;
     case _actions.SEARCH_DEALS:
       return [].concat(_toConsumableArray(action.deals)).filter(function (deal) {
-        return deal.company.toLowerCase().includes(action.searchTerm) || deal.Deal.toLowerCase().includes(action.searchTerm);
+        return deal.company.toLowerCase().includes(action.searchTerm) || deal.deal.toLowerCase().includes(action.searchTerm);
       });
     case _actions.RESET:
-      return [].concat(_toConsumableArray(deals));
+      return [].concat(_toConsumableArray(state));
     default:
-      return deals;
+      return state;
   }
 }
 
@@ -19127,7 +19140,7 @@ module.exports = EnterLeaveEventPlugin;
 
 var _assign = __webpack_require__(5);
 
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 
 var getTextContentAccessor = __webpack_require__(96);
 
@@ -19223,7 +19236,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -20679,7 +20692,7 @@ var AutoFocusUtils = __webpack_require__(177);
 var CSSPropertyOperations = __webpack_require__(179);
 var DOMLazyTree = __webpack_require__(21);
 var DOMNamespaces = __webpack_require__(51);
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var DOMPropertyOperations = __webpack_require__(82);
 var EventPluginHub = __webpack_require__(27);
 var EventPluginRegistry = __webpack_require__(36);
@@ -22137,7 +22150,7 @@ module.exports = ReactDOMInput;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var ReactComponentTreeHook = __webpack_require__(10);
 
 var warning = __webpack_require__(2);
@@ -23092,7 +23105,7 @@ module.exports = {
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var EventPluginRegistry = __webpack_require__(36);
 var ReactComponentTreeHook = __webpack_require__(10);
 
@@ -23795,7 +23808,7 @@ var _assign = __webpack_require__(5);
 
 var EventListener = __webpack_require__(71);
 var ExecutionEnvironment = __webpack_require__(7);
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(14);
 
@@ -23986,7 +23999,7 @@ module.exports = ReactHostOperationHistoryHook;
 
 
 
-var DOMProperty = __webpack_require__(18);
+var DOMProperty = __webpack_require__(17);
 var EventPluginHub = __webpack_require__(27);
 var EventPluginUtils = __webpack_require__(52);
 var ReactComponentEnvironment = __webpack_require__(55);
@@ -24696,7 +24709,7 @@ module.exports = ReactPropTypeLocationNames;
 var _assign = __webpack_require__(5);
 
 var CallbackQueue = __webpack_require__(81);
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactInputSelection = __webpack_require__(88);
 var ReactInstrumentation = __webpack_require__(13);
@@ -24969,7 +24982,7 @@ module.exports = ReactRef;
 
 var _assign = __webpack_require__(5);
 
-var PooledClass = __webpack_require__(19);
+var PooledClass = __webpack_require__(18);
 var Transaction = __webpack_require__(39);
 var ReactInstrumentation = __webpack_require__(13);
 var ReactServerUpdateQueue = __webpack_require__(220);
@@ -29256,7 +29269,7 @@ module.exports = PooledClass;
 
 
 var PooledClass = __webpack_require__(274);
-var ReactElement = __webpack_require__(20);
+var ReactElement = __webpack_require__(19);
 
 var emptyFunction = __webpack_require__(11);
 var traverseAllChildren = __webpack_require__(285);
@@ -29449,7 +29462,7 @@ module.exports = ReactChildren;
 
 
 
-var ReactElement = __webpack_require__(20);
+var ReactElement = __webpack_require__(19);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -29651,7 +29664,7 @@ module.exports = ReactPropTypeLocationNames;
 
 
 
-var _require = __webpack_require__(20),
+var _require = __webpack_require__(19),
     isValidElement = _require.isValidElement;
 
 var factory = __webpack_require__(78);
@@ -29804,7 +29817,7 @@ module.exports = checkReactTypeSpec;
 var _require = __webpack_require__(109),
     Component = _require.Component;
 
-var _require2 = __webpack_require__(20),
+var _require2 = __webpack_require__(19),
     isValidElement = _require2.isValidElement;
 
 var ReactNoopUpdateQueue = __webpack_require__(112);
@@ -29852,7 +29865,7 @@ module.exports = getNextDebugID;
 
 var _prodInvariant = __webpack_require__(24);
 
-var ReactElement = __webpack_require__(20);
+var ReactElement = __webpack_require__(19);
 
 var invariant = __webpack_require__(1);
 

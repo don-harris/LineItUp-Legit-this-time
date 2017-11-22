@@ -19,7 +19,7 @@ class App extends React.Component {
 
   //   }
   // }
-  render () {
+   render () {
     return (
       <Router>
         <div className="container">

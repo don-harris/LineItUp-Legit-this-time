@@ -11,7 +11,9 @@ class SearchBar extends React.Component {
     }
     this.handleChange = this.handleChange.bind(this)
   }
-
+  componentDidMount () {
+    this.props.dispatch(fetchDeals())
+}
   handleChange (evt) {
     this.setState({
       deal: evt.target.value

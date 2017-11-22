@@ -1,5 +1,5 @@
 import React from 'react'
-import testData from '../../../data.json'
+// import testData from '../../../data.json'
 
 const ProfileLogin = (props) => {
   return (
